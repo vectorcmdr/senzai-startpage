@@ -1,0 +1,748 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
+* {
+    margin:  0;
+    border:  0;
+    padding: 0;
+    outline: 0;
+
+    list-style:      none;
+    text-decoration: none;
+    text-rendering:  optimizeLegibility;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-font-smoothing: subpixel-antialiased;
+    -ms-font-smoothing: subpixel-antialiased;
+    -o-font-smoothing: subpixel-antialiased;
+
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+*:not(:defined) {
+    display: none;
+}
+
+:root {
+    --wisteria-light:   #C5B4F8;
+    --wisteria-dark:    #9A7CF3;
+    --sky-light:        #80DFEF;
+    --sky-dark:         #49D1E9;
+    --surf-light:       #A5F2E3;
+    --surf-dark:        #6FEBD3;
+    --ginkgo-light:     #B9E48B;
+    --ginkgo-dark:      #9BD85A;
+    --yuzu-light:       #F9E18B;
+    --yuzu-dark:        #F6D251;
+    --mikan-light:      #FDAC72;
+    --mikan-dark:       #FC8936;
+    --hydrangea-light:  #FF6D8F;
+    --hydrangea-dark:   #FF2D5E;
+    --azalea-light:     #FF93FA;
+    --azalea-dark:      #FF5DE1;
+    --pebble:           #F5F5EF;
+    --pebble-tr:        #F5F5EF5F;    
+    --mackerel:         #908E8F;
+    --mackerel-tr:      #908E8F20;
+    --basalt:           #2A262C;
+    --basalt-tr:        #2A262C5F;
+    --slate:            #111114;
+    --slate-tr:         #11111420;
+    --anko-light:       #4A3F32;
+    --anko-dark:        #251F18;
+    --karinto-light:    #876D58;
+    --karinto-dark:     #564638;
+    --dango-light:      #F4EED6;
+    --dango-dark:       #E6D79E;
+    --sakura-light:     #F7B8BA;
+    --sakura-dark:      #F17E82;
+    --marblesoda-light: #59C2E6;
+    --marblesoda-dark:  #20A8D5;
+    --matcha-light:     #79D993;
+    --matcha-dark:      #40C965;
+
+    --accent:           var(--wisteria-light);
+    --missing-error:    var(--azalea-dark);
+    --title-text:       var(--pebble);
+    --icon-sun:         var(--yuzu-light);
+    --icon-moon:        var(--slate);
+    --icon-clock:       var(--yuzu-dark);
+    --background:       var(--slate);
+    --midground:        var(--basalt);
+    --hover:            var(--mackerel-tr);
+    --toggle-bg:        var(--basalt);
+    --toggle-button:    var(--mackerel);
+    --icon-sunny:       var(--mikan-light);
+    --icon-cloudy:      var(--sky-light);
+    --text-major:       var(--mackerel);
+    --text-minor:       var(--mackerel);
+    --button-close:     var(--hydrangea-light);
+    --button-close-hov: var(--hydrangea-dark);
+    --engine-highlight: var(--ginkgo-light);
+    --icon-keys:        var(--pebble);
+    --icon-keys-glyph:  var(--basalt);
+    --icon-currency:    var(--ginkgo-light);
+    --icon-help:        var(--surf-light);
+    --icon-tab-default: var(--mackerel);
+    --icon-task-add:    var(--ginkgo-light);
+    --icon-task-add-bg: var(--ginkgo-dark);
+    --icon-task-rem:    var(--hydrangea-light);
+    --icon-task-rem-bg: var(--hydrangea-dark);
+    --icon-task-hov:    var(--pebble);
+    --icon-task-edit:   var(--yuzu-light);
+    --tabs-main:        var(--mackerel);
+    --tabs-highlight:   var(--pebble);
+    --tabs-nav:         var(--pebble);
+    --tabs-flav-one:    var(--wisteria-light);
+    --tabs-flav-two:    var(--sky-light);
+    --tabs-flav-three:  var(--ginkgo-light);
+    --tabs-flav-four:   var(--yuzu-light);
+    --tabs-flav-five:   var(--mikan-light);
+    --tabs-flav-six:    var(--hydrangea-light);
+    --tabs-link:        var(--mackerel);
+    --tabs-link-hover:  var(--pebble);
+    --task-btn-back:    var(--basalt);
+    --task-count-line:  var(--mackerel);
+    --task-todo:        var(--hydrangea-light);
+    --task-done:        var(--ginkgo-light);
+    --task-count-hover: var(--basalt);
+    --task-todo-hov:    var(--hydrangea-dark);
+    --task-done-hov:    var(--ginkgo-dark);
+    --task-but-hov:     var(--pebble);
+    --task-scrollbar:   var(--basalt);
+    --task-invalid:     var(--hydrangea-light);
+    --task-control:     var(--mackerel);
+    --task-leftline:    var(--mackerel-tr);
+    --task-box-mid:     var(--basalt-tr);
+    --task-error:       var(--mikan-light);
+    --bar-txt-minor:    var(--mackerel);
+    --bar-txt-major:    var(--pebble);
+    --box-shadow:       var(--slate);
+    --box-shadow-tr:    var(--slate-tr);
+    --box-shadow-todo:  var(--basalt);
+    --focus:            var(--pebble);
+    --box-dark:         var(--basalt);
+    --searchbox-bg:     var(--basalt-tr);
+    --modal-bg:         var(--basalt-tr);
+    --gradient-top:     var(--pebble);
+    --gradient-bot:     var(--slate);
+    --priority-low:     var(--ginkgo-dark);
+    --priority-med:     var(--yuzu-dark);
+    --priority-high:    var(--hydrangea-dark);
+    --credit-mark:      var(--mackerel);
+    --link:             var(--sky-dark);
+    --link-visited:     var(--wisteria-light);
+    --link-hover:       var(--sky-light);
+    --link-active:      var(--wisteria-dark);
+    --background-img:    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23191921' fill-opacity='0.55'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+:root.light {
+    --accent:           var(--wisteria-light);
+    --missing-error:    var(--azalea-dark);
+    --title-text:       var(--slate);
+    --icon-sun:         var(--yuzu-light);
+    --icon-moon:        var(--slate);
+    --icon-clock:       var(--yuzu-dark);    
+    --background:       var(--pebble);
+    --midground:        var(--mackerel);
+    --hover:            var(--basalt-tr);
+    --toggle-bg:        var(--mackerel);
+    --toggle-button:    var(--pebble);
+    --icon-sunny:       var(--mikan-light);
+    --icon-cloudy:      var(--sky-light);
+    --text-major:       var(--basalt);
+    --text-minor:       var(--pebble);
+    --button-close:     var(--hydrangea-light);
+    --button-close-hov: var(--hydrangea-dark);
+    --engine-highlight: var(--ginkgo-light);
+    --icon-keys:        var(--pebble);
+    --icon-keys-glyph:  var(--basalt);
+    --icon-currency:    var(--ginkgo-light);
+    --icon-help:        var(--surf-light);
+    --icon-tab-default: var(--pebble);
+    --icon-task-add:    var(--ginkgo-light);
+    --icon-task-add-bg: var(--ginkgo-dark);
+    --icon-task-rem:    var(--hydrangea-light);
+    --icon-task-rem-bg: var(--hydrangea-dark);
+    --icon-task-hov:    var(--mackerel);
+    --icon-task-edit:   var(--yuzu-dark);    
+    --tabs-main:        var(--slate);
+    --tabs-highlight:   var(--pebble);
+    --tabs-nav:         var(--pebble);
+    --tabs-flav-one:    var(--wisteria-light);
+    --tabs-flav-two:    var(--sky-light);
+    --tabs-flav-three:  var(--ginkgo-light);
+    --tabs-flav-four:   var(--yuzu-light);
+    --tabs-flav-five:   var(--mikan-light);
+    --tabs-flav-six:    var(--hydrangea-light);
+    --tabs-link:        var(--basalt);
+    --tabs-link-hover:  var(--pebble);
+    --task-btn-back:    var(--pebble);
+    --task-count-line:  var(--basalt);
+    --task-todo:        var(--hydrangea-dark);
+    --task-done:        var(--ginkgo-dark);
+    --task-count-hover: var(--mackerel);
+    --task-todo-hov:    var(--hydrangea-light);
+    --task-done-hov:    var(--ginkgo-light);
+    --task-but-hov:     var(--basalt);
+    --task-txt-cursor:  var(--yuzu-light);
+    --task-scrollbar:   var(--basalt);
+    --task-invalid:     var(--hydrangea-light);
+    --task-control:     var(--mackerel);
+    --task-leftline:    var(--mackerel-tr);
+    --task-box-mid:     var(--basalt-tr);
+    --task-error:       var(--mikan-light);
+    --bar-txt-minor:    var(--basalt);
+    --bar-txt-major:    var(--pebble);
+    --box-shadow:       var(--mackerel);
+    --box-shadow-tr:    var(--slate-tr);
+    --box-shadow-todo:  var(--mackerel);
+    --focus:            var(--pebble);
+    --box-dark:         var(--basalt);
+    --searchbox-bg:     var(--basalt-tr);
+    --modal-bg:         var(--basalt-tr);
+    --gradient-top:     var(--pebble);
+    --gradient-bot:     var(--slate-);
+    --priority-low:     var(--ginkgo-dark);
+    --priority-med:     var(--yuzu-dark);
+    --priority-high:    var(--hydrangea-dark);
+    --credit-mark:      var(--mackerel);
+    --link:             var(--sky-dark);
+    --link-visited:     var(--wisteria-light);
+    --link-hover:       var(--sky-light);
+    --link-active:      var(--wisteria-dark);
+    --background-img:   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23191921' fill-opacity='0.05'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+body {
+    background-color: var(--background);
+    background-image: var(--background-img);
+    width: 100%;
+    display: grid;
+    overflow: hidden;
+}
+
+::selection {
+    background: none;
+}
+
+todo-list {
+    position: relative;
+    min-width: 350px;
+    height: 62vh;
+    top: 11%;
+    left: 5%;
+    color: var(--title-text);
+    width: 90%;
+    border-radius: 12px;
+}
+
+todo-list::after {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 1px;
+    width: 2px;
+    height: 100%;
+    background: var(--task-leftline);
+    z-index: 4;
+}
+
+tabs-list {
+    position: relative;
+    width: 100%;
+    height: 32vh;
+    top: 5%;
+}
+
+.checkbox {
+    opacity: 0;
+    position: relative;
+    z-index: 9999;
+    margin: 0px;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(-15px);
+}
+
+.ti {
+    font-size: 10px;
+}
+
+.label {
+    background-color: var(--toggle-bg);
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: absolute;
+    z-index: 9999;
+    top: 14px;
+    left: 24px;
+    height: 15px;
+    width: 32px;
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: var(--toggle-button);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    height: 11px;
+    width: 11px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.label .ti-moon {
+    color: var(--icon-moon);
+}
+
+.label .ti-sun {
+    color: var(--icon-sun);
+}
+
+.credit {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 9px;
+    font-weight: 700;
+    text-align: right;
+    color: var(--credit-mark);
+}
+
+a:link {
+  color: var(--link);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a:active {
+  color: var(--link-active);
+}
+
+.\+ {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.\-,
+.\| {
+    display: flex
+}
+
+.\- {
+    align-items: center
+}
+
+.\| {
+    justify-content: center
+}
+
+.\21\2d,
+.\21\7c,
+.\21\2b,
+.\21\5e,
+.\21\7e,
+.\21\3c,
+.\21\5f,
+.\21\3e {
+    position: absolute;
+    margin: auto
+}
+
+.\21\2d,
+.\21\2b,
+.\21\7e {
+    right: 0;
+    left: 0
+}
+
+.\21\7c,
+.\21\2b,
+.\21\7e {
+    top: 0;
+    bottom: 0
+}
+
+.\21\3c {
+    left: 0
+}
+
+.\21\5e {
+    top: 0
+}
+
+.\21\3e {
+    right: 0
+}
+
+.\21\5f {
+    bottom: 0
+}
+
+.push-right {
+    float: right
+}
+
+.push-left {
+    float: left
+}
+
+@media screen and (min-width: 700px) {
+    .col-1 {
+        --col: 1
+    }
+    .row-1 {
+        --row: 1
+    }
+    .col-2 {
+        --col: 2
+    }
+    .row-2 {
+        --row: 2
+    }
+    .col-3 {
+        --col: 3
+    }
+    .row-3 {
+        --row: 3
+    }
+    .col-4 {
+        --col: 4
+    }
+    .row-4 {
+        --row: 4
+    }
+    .col-5 {
+        --col: 5
+    }
+    .row-5 {
+        --row: 5
+    }
+    .col-6 {
+        --col: 6
+    }
+    .row-6 {
+        --row: 6
+    }
+    .col-7 {
+        --col: 7
+    }
+    .row-7 {
+        --row: 7
+    }
+    .col-8 {
+        --col: 8
+    }
+    .row-8 {
+        --row: 8
+    }
+    .col-9 {
+        --col: 9
+    }
+    .row-9 {
+        --row: 9
+    }
+    .col-10 {
+        --col: 10
+    }
+    .row-10 {
+        --row: 10
+    }
+    .col-11 {
+        --col: 11
+    }
+    .row-11 {
+        --row: 11
+    }
+    .col-12 {
+        --col: 12
+    }
+    .row-12 {
+        --row: 12
+    }
+    cols {
+        grid-template-columns: repeat(12, auto);
+        height: 100%
+    }
+    rows {
+        grid-template-rows: repeat(48, auto);
+        width: 100%;
+        height: auto
+    }
+    cols .col-1.col-end {
+        --col: calc((1 - 12) + 12) / calc(12 + 1)
+    }
+    cols .col-2.col-end {
+        --col: calc((2 - 12) + 12) / calc(12 + 1)
+    }
+    cols .col-2.col-3 {
+        --col: 2 / calc(1 + 3)
+    }
+    cols .col-3.col-end {
+        --col: calc((3 - 12) + 12) / calc(12 + 1)
+    }
+    cols .col-2.col-4 {
+        --col: 2 / calc(1 + 4)
+    }
+    cols .col-3.col-4 {
+        --col: 3 / calc(1 + 4)
+    }
+    cols .col-4.col-end {
+        --col: calc((4 - 12) + 12) / calc(12 + 1)
+    }
+    cols .col-2.col-5 {
+        --col: 2 / calc(1 + 5)
+    }
+    cols .col-3.col-5 {
+        --col: 3 / calc(1 + 5)
+    }
+    cols .col-4.col-5 {
+        --col: 4 / calc(1 + 5)
+    }
+    cols .col-5.col-end {
+        --col: calc((5 - 12) + 12) / calc(12 + 1)
+    }
+    cols .col-2.col-6 {
+        --col: 2 / calc(1 + 6)
+    }
+    cols .col-3.col-6 {
+        --col: 3 / calc(1 + 6)
+    }
+    cols .col-4.col-6 {
+        --col: 4 / calc(1 + 6)
+    }
+    cols .col-5.col-6 {
+        --col: 5 / calc(1 + 6)
+    }
+    cols .col-6.col-end {
+        --col: calc((6 - 12) + 12) / calc(12 + 1)
+    }
+    cols .col-2.col-7 {
+        --col: 2 / calc(1 + 7)
+    }
+    cols .col-3.col-7 {
+        --col: 3 / calc(1 + 7)
+    }
+    cols .col-4.col-7 {
+        --col: 4 / calc(1 + 7)
+    }
+    cols .col-5.col-7 {
+        --col: 5 / calc(1 + 7)
+    }
+    cols .col-6.col-7 {
+        --col: 6 / calc(1 + 7)
+    }
+    cols .col-7.col-end {
+        --col: calc((7 - 12) + 12) / calc(12 + 1)
+    }
+    cols .col-2.col-8 {
+        --col: 2 / calc(1 + 8)
+    }
+    cols .col-3.col-8 {
+        --col: 3 / calc(1 + 8)
+    }
+    cols .col-4.col-8 {
+        --col: 4 / calc(1 + 8)
+    }
+    cols .col-5.col-8 {
+        --col: 5 / calc(1 + 8)
+    }
+    cols .col-6.col-8 {
+        --col: 6 / calc(1 + 8)
+    }
+    cols .col-7.col-8 {
+        --col: 7 / calc(1 + 8)
+    }
+    cols .col-8.col-end {
+        --col: calc((8 - 12) + 12) / calc(12 + 1)
+    }
+    cols .col-2.col-9 {
+        --col: 2 / calc(1 + 9)
+    }
+    cols .col-3.col-9 {
+        --col: 3 / calc(1 + 9)
+    }
+    cols .col-4.col-9 {
+        --col: 4 / calc(1 + 9)
+    }
+    cols .col-5.col-9 {
+        --col: 5 / calc(1 + 9)
+    }
+    cols .col-6.col-9 {
+        --col: 6 / calc(1 + 9)
+    }
+    cols .col-7.col-9 {
+        --col: 7 / calc(1 + 9)
+    }
+    cols .col-8.col-9 {
+        --col: 8 / calc(1 + 9)
+    }
+    cols .col-9.col-end {
+        --col: calc((9 - 12) + 12) / calc(12 + 1)
+    }
+    cols .col-2.col-10 {
+        --col: 2 / calc(1 + 10)
+    }
+    cols .col-3.col-10 {
+        --col: 3 / calc(1 + 10)
+    }
+    cols .col-4.col-10 {
+        --col: 4 / calc(1 + 10)
+    }
+    cols .col-5.col-10 {
+        --col: 5 / calc(1 + 10)
+    }
+    cols .col-6.col-10 {
+        --col: 6 / calc(1 + 10)
+    }
+    cols .col-7.col-10 {
+        --col: 7 / calc(1 + 10)
+    }
+    cols .col-8.col-10 {
+        --col: 8 / calc(1 + 10)
+    }
+    cols .col-9.col-10 {
+        --col: 9 / calc(1 + 10)
+    }
+    cols .col-10.col-end {
+        --col: calc((10 - 12) + 12) / calc(12 + 1)
+    }
+    cols .col-2.col-11 {
+        --col: 2 / calc(1 + 11)
+    }
+    cols .col-3.col-11 {
+        --col: 3 / calc(1 + 11)
+    }
+    cols .col-4.col-11 {
+        --col: 4 / calc(1 + 11)
+    }
+    cols .col-5.col-11 {
+        --col: 5 / calc(1 + 11)
+    }
+    cols .col-6.col-11 {
+        --col: 6 / calc(1 + 11)
+    }
+    cols .col-7.col-11 {
+        --col: 7 / calc(1 + 11)
+    }
+    cols .col-8.col-11 {
+        --col: 8 / calc(1 + 11)
+    }
+    cols .col-9.col-11 {
+        --col: 9 / calc(1 + 11)
+    }
+    cols .col-10.col-11 {
+        --col: 10 / calc(1 + 11)
+    }
+    cols .col-11.col-end {
+        --col: calc((11 - 12) + 12) / calc(12 + 1)
+    }
+    cols .col-2.col-12 {
+        --col: 2 / calc(1 + 12)
+    }
+    cols .col-3.col-12 {
+        --col: 3 / calc(1 + 12)
+    }
+    cols .col-4.col-12 {
+        --col: 4 / calc(1 + 12)
+    }
+    cols .col-5.col-12 {
+        --col: 5 / calc(1 + 12)
+    }
+    cols .col-6.col-12 {
+        --col: 6 / calc(1 + 12)
+    }
+    cols .col-7.col-12 {
+        --col: 7 / calc(1 + 12)
+    }
+    cols .col-8.col-12 {
+        --col: 8 / calc(1 + 12)
+    }
+    cols .col-9.col-12 {
+        --col: 9 / calc(1 + 12)
+    }
+    cols .col-10.col-12 {
+        --col: 10 / calc(1 + 12)
+    }
+    cols .col-11.col-12 {
+        --col: 11 / calc(1 + 12)
+    }
+    cols .col-12.col-end {
+        --col: calc((12 - 12) + 12) / calc(12 + 1)
+    }
+    .col-1.col-2 {
+        --col: 1 / calc(3)
+    }
+    .col-half {
+        --col: 1 / 7
+    }
+    .row-half {
+        --row: 1 / 7
+    }
+    .row-half-middle {
+        --row: 7 / 13
+    }
+    .col-half-middle {
+        --col: 7 / 13
+    }
+    .col-third {
+        --col: 1 / 5
+    }
+    .row-third {
+        --row: 1 / 5
+    }
+    .col-end {
+        --col: 12
+    }
+    .row-end {
+        --row: 12
+    }
+}
+
+cols,
+rows {
+    display: grid
+}
+
+[class*='col-'] {
+    grid-column: var(--col)
+}
+
+[class*='row-'] {
+    grid-row: var(--row)
+}
+
+.text-center {
+    text-align: center
+}
+
+.relative {
+    position: relative
+}
