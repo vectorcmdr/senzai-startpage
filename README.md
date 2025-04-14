@@ -19,7 +19,7 @@
 [stars-url]: https://github.com/vectorcmdr/senzai-startpage/stargazers
 
 [license-shield]: https://img.shields.io/github/license/vectorcmdr/senzai-startpage?style=for-the-badge&logo=bookstack&color=49d1e9&logoColor=f5f5ef&labelColor=2a262c
-[license-url]: https://github.com/vectorcmdr/senzai-startpage/blob/main/LICENSE
+[license-url]: https://github.com/vectorcmdr/senzai-startpage/blob/main/LICENSE.txt
 
 <h3 align="center">
   <a href="https://vectorcmdr.github.io/senzai-startpage">Live Demo </a>
