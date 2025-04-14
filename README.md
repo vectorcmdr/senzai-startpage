@@ -83,6 +83,7 @@ Designed for functionality and aesthetics with seamless hosting on GitHub Pages,
 > Todo and preferences in page are stored locally, in browser. Using a different browser or device is an independant session.
 
 ### ⌨️ Keybinds
+* <kbd>c</kbd> Open config editor
 * <kbd>alt</kbd> + <kbd>Numbers row (1-6)</kbd> Switch tabs
 * <kbd>t</kbd> Open the create task panel
 * <kbd>Enter</kbd> Create a task
