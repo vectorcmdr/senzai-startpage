@@ -1,4 +1,6 @@
-const CONFIG = new Config({
+let saved_config = JSON.parse(localStorage.getItem("CONFIG"));
+
+const default_config = {
   overrideStorage: true, // override localStorage with fixed userconfig values
 
   disabled: [],
@@ -45,7 +47,8 @@ const CONFIG = new Config({
   },
   keybindings: {
     "t": 'todo-list',
-    "s": 'search-bar'
+    "s": 'search-bar',
+    "c": "config-editor",
   },  
   openLastVisitedTab: false,
   // For icon names, see: https://tabler.io/icons
@@ -473,12 +476,8 @@ const CONFIG = new Config({
         },
       ]
     },
-    //{
-    //  name: 'test',
-    //  background_url: 'src/img/banners/bg-2.gif',
-    //  move: '0',
-    //  scale: '0',
-    //  categories: []
-    //}
     ]
-});
+};
+
+const CONFIG = new Config(saved_config ?? default_config);
+// const CONFIG = new Config(default_config);

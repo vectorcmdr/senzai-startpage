@@ -1,5 +1,6 @@
 const components = {
   'search-bar': Search,
+  'config-editor': ConfigEditor,
   'todo-list': Todo,
   'status-bar': Statusbar,
   'currency-compare': Currency,

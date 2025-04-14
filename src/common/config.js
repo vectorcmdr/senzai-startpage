@@ -35,7 +35,8 @@ class Config {
     tabs: [],
     keybindings: {
       "t": 'todo-list',
-      "s": 'search-bar'
+      "s": 'search-bar',
+      "c": "config-editor",
     }
   };
 

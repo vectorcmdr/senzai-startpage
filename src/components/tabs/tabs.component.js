@@ -305,6 +305,7 @@ class Tabs extends Component {
           <div class="categories">
             ${Category.getAll(this.tabs)}
             <search-bar></search-bar>
+            <config-editor></config-editor>
           </div>
           
         </div>
@@ -345,8 +346,12 @@ function darkModeReload() {
   }
 }
 
+//function getCopyright(){
+//  document.getElementById("copyright").innerHTML = `Senzai StartPage <br>by <a href="https://github.com/vectorcmdr">@vector_cmdr</a>`;
+//}
+
 function getCopyright(){
-  document.getElementById("copyright").innerHTML = `Senzai StartPage <br>by <a href="https://github.com/lottehime">@vector_cmdr</a>`;
+  document.getElementById("copyright").innerHTML = ``;
 }
 
 window.onload = function() {
