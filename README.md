@@ -47,8 +47,8 @@ Designed for functionality and aesthetics with seamless hosting on GitHub Pages,
 
 ## 🚀 Usage
 
-1. Fork and clone the repo
-2. Update [`userconfig.js`](userconfig.js) to match your preferences, such as:
+1. Fork the repo and host via GitHub pages deployment, or clone and run locally.
+2. Navigate to the page and press <kbd>c</kbd> to bring up the builtin editor to change it to your preferences, such as:
    - Disable components you don't want to use
    - Set the desired tab number font/language
    - Set your location for the weather widget
@@ -63,7 +63,7 @@ Designed for functionality and aesthetics with seamless hosting on GitHub Pages,
    - Update the bookmarks and links for the one you want to use
    - Change the icons, names and colors of those bookmarks
 
-<i>Can also be run as a local file from your machine.</i>
+<i>Alternatively, you can manually update [`userconfig.js`](userconfig.js) to match your preferences</i>
 
 > [!TIP]
 > Clicking the blue information icon before the tab numbers provides a popup with usage tips.

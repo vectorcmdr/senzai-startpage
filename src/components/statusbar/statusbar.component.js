@@ -267,7 +267,14 @@ class Statusbar extends Component {
     this.modal
       .setTitle('Usage Tips ~')
       .setContent(`
-        <p style="font-size: 14pt; font-style: italic;">Keybindings:</p>
+        <p style="font-size: 14pt; font-style: italic; padding-bottom: 8px;">Config & Personalization:</p>
+        <li><kbd>c</kbd> - open the config editor and customize the page</li>
+        <br>
+        <p>You can change values such as currencies, location, time format, search engines, etc.</p>
+        <br>
+        <p><i>See the <a href="https://github.com/vectorcmdr/senzai-startpage">readme</a> for further details.</i></p>
+        <br>
+        <p style="font-size: 14pt; font-style: italic;">Interface (Keys):</p>
         <li><kbd>alt</kbd> + <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>, <kbd>4</kbd>, <kbd>5</kbd>, <kbd>6</kbd> - switch tabs</li>
         <br>
         <cols>
@@ -288,8 +295,9 @@ class Statusbar extends Component {
         </li>
         </cols>
         <br>
-        <p style="font-size: 14pt; font-style: italic;">Interface:</p>
+        <p style="font-size: 14pt; font-style: italic;">Interface (General):</p>
         <ul>
+          <li>Click the sun/moon toggle to switch between dark and light mode.</li>
           <li>Click the tab indicators to switch tabs.</li>
           <li>Click the clock widget to open the calendar page.</li>
           <li>Click the currency conversion widget to open finance page.</li>
@@ -301,11 +309,7 @@ class Statusbar extends Component {
           <li>Clear all notes / todos by clicking the bars on the right top of the panel.</li>
         </ul>
         <br>
-        <p style="font-size: 14pt; font-style: italic; padding-bottom: 8px;">Config:</p>
-        <p>Further personal configuration is required by editing the <i><kbd>./userconfig.js</kbd></i> file.</p>
-        <p>You can change values such as currencies, location, time format, search engines, etc.</p>
-        <br>
-        <p><i>See the <a href="">readme</a> for further details.</i></p>
+
     `);
   }
 

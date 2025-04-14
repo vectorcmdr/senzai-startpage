@@ -10,7 +10,7 @@ class Modal extends Component {
     title: '.modal-header-title'
   };
 
-  constructor(name, width = 650, height = 660) {
+  constructor(name, width = 650, height = 710) {
     super();
 
     this.name = name ?? '';
