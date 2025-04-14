@@ -2,17 +2,24 @@
   🌱<a href="https://vectorcmdr.github.io/senzai-startpage">SENZAI</a> StartPage
 </h1>
 
-<p align="center">
-  <a href="https://github.com/vectorcmdr/senzai-startpage/stargazers">
-    <img src="https://img.shields.io/github/stars/vectorcmdr/senzai-startpage?style=for-the-badge&logo=starship&color=b9e48b&logoColor=f5f5ef&labelColor=2a262c">
-  </a>
-  <a href="https://github.com/vectorcmdr/senzai-startpage/issues">
-    <img src="https://img.shields.io/github/issues/vectorcmdr/senzai-startpage?style=for-the-badge&logo=gitbook&color=fdac72&logoColor=f5f5ef&labelColor=2a262c">
-  </a>
-  <a href="https://github.com/vectorcmdr/senzai-startpage/contributors">
-    <img src="https://img.shields.io/github/contributors/vectorcmdr/senzai-startpage?style=for-the-badge&logo=github&color=c5b4f8&logoColor=f5f5ef&labelColor=2a262c">
-  </a>
-</p>
+<div align="center">
+  
+[![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url] [![Contributors][contributors-shield]][contributors-url]
+[![License][license-shield]][license-url] 
+
+</div>
+
+[issues-shield]: https://img.shields.io/github/issues/vectorcmdr/senzai-startpage?style=for-the-badge&logo=gitbook&color=fdac72&logoColor=f5f5ef&labelColor=2a262c
+[issues-url]: https://github.com/vectorcmdr/senzai-startpage/graphs/issues
+
+[contributors-shield]: https://img.shields.io/github/contributors/vectorcmdr/senzai-startpage?style=for-the-badge&logo=github&color=c5b4f8&logoColor=f5f5ef&labelColor=2a262c
+[contributors-url]: https://github.com/vectorcmdr/senzai-startpage/graphs/contributors
+
+[stars-shield]: https://img.shields.io/github/stars/vectorcmdr/senzai-startpage?style=for-the-badge&logo=starship&color=b9e48b&logoColor=f5f5ef&labelColor=2a262c
+[stars-url]: https://github.com/vectorcmdr/senzai-startpage/stargazers
+
+[license-shield]: https://img.shields.io/github/license/vectorcmdr/senzai-startpage?style=for-the-badge&logo=bookstack&color=49d1e9&logoColor=f5f5ef&labelColor=2a262c
+[license-url]: https://github.com/vectorcmdr/senzai-startpage/blob/master/LICENSE
 
 <h3 align="center">
   <a href="https://vectorcmdr.github.io/senzai-startpage">Live Demo </a>
