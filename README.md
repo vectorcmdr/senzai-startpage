@@ -105,8 +105,10 @@ Designed for functionality and aesthetics with seamless hosting on GitHub Pages,
 
 Unfortunately, you will need to use add-ons/extensions for this for most browsers.
 
-- For Chromium-based browsers (Brave/Chrome) use an addon such as [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia).
-- For Firefox-based browsers, use an addon such as [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search) (make sure you enable "Force links to open in the top frame (experimental)" in the extensions preferences).
+- For Gecko-based browsers (Firefox, Zen, etc.), use an addon such as [New Tab Override](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/) and point it to your page.
+- For Chromium-based browsers (Chrome, Brave, Edge, etc.), use an addon such as [Custom New Tab](https://chromewebstore.google.com/detail/custom-new-tab/lfjnnkckddkopjfgmbcpdiolnmfobflj) and point it to your page.
+<i>Alternatively, you can go to the extensions setting and turn on developer mode and load an unpacked extension. Select the root folder of your cloned repo.</i>
+
 
 ### 👨‍💻 Config Snippet Examples
 <details>
