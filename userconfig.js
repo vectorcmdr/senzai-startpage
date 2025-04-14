@@ -449,7 +449,7 @@ const CONFIG = new Config({
               name: 'Reddit',
               url: 'https://rebrickable.com',
               icon: 'brand-reddit',
-              icon_color: 'https://www.reddit.com/'
+              icon_color: '#fc8936'
             },
             {
               name: 'Bluesky',
