@@ -326,8 +326,14 @@ const CONFIG = new Config({
               icon_color: '#f9e18b'
             },
             {
-              name: 'LEGO',
+              name: 'LEGO.com',
               url: 'https://www.lego.com',
+              icon: 'lego',
+              icon_color: '#f9e18b'
+            },
+            {
+              name: 'LEGO Insiders',
+              url: 'https://www.lego.com/en-au/insiders/rewards?icmp=LP-SHQL-Standard-NO_QL_Insiders_Rewards_LP-P-NO-8L4YEGC02A',
               icon: 'lego',
               icon_color: '#f9e18b'
             },
