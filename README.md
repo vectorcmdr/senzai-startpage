@@ -4,13 +4,13 @@
 
 <p align="center">
   <a href="https://github.com/vectorcmdr/senzai-startpage/stargazers">
-    <img src="https://img.shields.io/github/stars/vectorcmdr/senzai-startpage?style=for-the-badge&logo=starship&color=a6e3a1&logoColor=D9E0EE&labelColor=302D41">
+    <img src="https://img.shields.io/github/stars/vectorcmdr/senzai-startpage?style=for-the-badge&logo=starship&color=b9e48b&logoColor=f5f5ef&labelColor=2a262c">
   </a>
   <a href="https://github.com/vectorcmdr/senzai-startpage/issues">
-    <img src="https://img.shields.io/github/issues/vectorcmdr/senzai-startpage?style=for-the-badge&logo=gitbook&color=fab387&logoColor=D9E0EE&labelColor=302D41">
+    <img src="https://img.shields.io/github/issues/vectorcmdr/senzai-startpage?style=for-the-badge&logo=gitbook&color=fdac72&logoColor=f5f5ef&labelColor=2a262c">
   </a>
   <a href="https://github.com/vectorcmdr/senzai-startpage/contributors">
-    <img src="https://img.shields.io/github/contributors/vectorcmdr/senzai-startpage?style=for-the-badge&logo=github&color=f38ba8&logoColor=D9E0EE&labelColor=302D41">
+    <img src="https://img.shields.io/github/contributors/vectorcmdr/senzai-startpage?style=for-the-badge&logo=github&color=c5b4f8&logoColor=f5f5ef&labelColor=2a262c">
   </a>
 </p>
 
