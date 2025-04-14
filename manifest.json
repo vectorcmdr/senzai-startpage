@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Senzai Startpage",
+	"version": "1.0.1",
+	"description": "Senzai Startpage - A custom new tab startpage",
+	"chrome_url_overrides": {
+		"newtab": "index.html"
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "{1b021246-cf15-4ebc-bfd9-52fe280c7870}"
+		}
+	}
+}
