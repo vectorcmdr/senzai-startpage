@@ -55,6 +55,7 @@ Designed for functionality and aesthetics with seamless hosting on GitHub Pages,
    - Change category tab banners and their image position and scale
    - Update the bookmarks and links for the one you want to use
    - Change the icons, names and colors of those bookmarks
+   
 <i>Can also be run as a local file from your machine.</i>
 
 > [!TIP]
