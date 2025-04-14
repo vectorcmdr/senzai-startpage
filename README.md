@@ -55,7 +55,7 @@ Designed for functionality and aesthetics with seamless hosting on GitHub Pages,
    - Change category tab banners and their image position and scale
    - Update the bookmarks and links for the one you want to use
    - Change the icons, names and colors of those bookmarks
-   
+
 <i>Can also be run as a local file from your machine.</i>
 
 > [!TIP]
@@ -229,7 +229,3 @@ The shipped 'pop culture' images are:
 | gits_01.gif                                                     | gits_02.gif                                                     | gits_03.gif                                                   |
 | --------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------- |
 | <img src="src/img/banners/pop_culture/gits_01.gif" width=175>   | <img src="src/img/banners/pop_culture/gits_02.gif" width=175>   | <img src="src/img/banners/pop_culture/gits_03.gif" width=175> |
-
-| ghibli_01.gif                                                   | ghibli_02.gif                                                   |
-| --------------------------------------------------------------- | --------------------------------------------------------------- |
-| <img src="src/img/banners/pop_culture/ghibli_01.gif" width=175> | <img src="src/img/banners/pop_culture/ghibli_02.gif" width=175> |
