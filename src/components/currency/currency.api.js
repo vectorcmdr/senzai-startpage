@@ -23,7 +23,7 @@ class CurrencyConversionClient {
   
     var locale = window.navigator.userLanguage;
     var date = new Date().toLocaleDateString(locale);
-    if(store !== date){
+    if(store !== date || store === "placeholder"){
       localStorage.setItem("storedDate", date);
       try {
         const response = await fetch(`https://api.fxratesapi.com/latest?base=${this.base}&amount=${this.amount}`);
