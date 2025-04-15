@@ -259,8 +259,8 @@ body {
 todo-list {
     position: relative;
     min-width: 350px;
-    height: 62vh;
-    top: 11%;
+    height: 58vh;
+    top: 13%;
     left: 5%;
     color: var(--title-text);
     width: 90%;
