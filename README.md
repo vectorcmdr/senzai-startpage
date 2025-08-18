@@ -1,5 +1,5 @@
 <h1 align="center">
-  🌱<a href="https://vectorcmdr.github.io/senzai-startpage">SENZAI</a> StartPage
+  🌱<a href="https://start.vectorcmdr.xyz">SENZAI</a> StartPage
 </h1>
 
 <div align="center">
