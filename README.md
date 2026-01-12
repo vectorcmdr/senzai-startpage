@@ -239,3 +239,9 @@ The shipped 'pop culture' images are:
 | gits_01.gif                                                     | gits_02.gif                                                     | gits_03.gif                                                   |
 | --------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------- |
 | <img src="src/img/banners/pop_culture/gits_01.gif" width=175>   | <img src="src/img/banners/pop_culture/gits_02.gif" width=175>   | <img src="src/img/banners/pop_culture/gits_03.gif" width=175> |
+
+
+## Help Support More Tinkering
+
+<a href="https://ko-fi.com/vector_cmdr">
+<img src="https://custom-icon-badges.demolab.com/badge/-Donate-lightblue?style=for-the-badge&logo=coffee&logoColor=red" height="64"/></a>
